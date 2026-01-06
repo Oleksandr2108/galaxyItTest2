@@ -1,0 +1,26 @@
+.wrapper {
+  &__flex {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &-text {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 150%;
+      text-transform: uppercase;
+      text-align: right;
+      color: #f4c22f;
+    }
+    &-arrow{
+      margin-left: 6px;
+    }
+  }
+
+  &__back {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+  }
+}

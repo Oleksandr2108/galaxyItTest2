@@ -1,7 +1,8 @@
 import mainImage from "@/assets/images/Recipe1.jpg";
 import RecipesCard from "../RecipesCard/RecipesCard";
 
-import styles from './RecipesList.module.scss'
+import styles from "./RecipesList.module.scss";
+import Button from "../Button/Button";
 
 const recipes = [
   {
@@ -32,19 +33,27 @@ const recipes = [
 
 const RecipesList = () => {
   return (
-    <div className={`col-12 ${styles.wrapper}`}>
-      {recipes.map((item, index) => (
-        <RecipesCard
-          key={index}
-          mainImage={item.image}
-          rating={item.rating}
-          title={item.title}
-          time={item.time}
-          description={item.description}
+    <>
+      <div className={`col-12 ${styles.wrapper}`}>
+        {recipes.map((item, index) => (
+          <RecipesCard
+            key={index}
+            mainImage={item.image}
+            rating={item.rating}
+            title={item.title}
+            time={item.time}
+            description={item.description}
+          />
+        ))}
+      </div>
+      <div className={`col-2 ${styles.btn}`}>
+        <Button
+          text="discover more recipes"
+          href="/"
         />
-      ))}
-    </div>
+      </div>
+    </>
   );
 };
 
-export default RecipesList
+export default RecipesList;

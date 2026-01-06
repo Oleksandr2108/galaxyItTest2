@@ -1,6 +1,7 @@
 import Header from "@/components/Header/Header";
 import Title from "@/components/Title/Title";
 import RecipesList from "@/components/RecipesList/RecipesList";
+import Button from "@/components/Button/Button";
 
 const Home = () => {
   return (
@@ -16,6 +17,8 @@ const Home = () => {
 In the kitchen with waffle pantry."
         />
         <RecipesList />
+
+        
       </div>
     </>
   );
