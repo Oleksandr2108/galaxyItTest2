@@ -1,0 +1,27 @@
+@use "../../styles/variables.scss" as vars;
+
+.title {
+  font-size: 40px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: vars.$grey2;
+  text-align: center;
+}
+
+.highlight {
+  color: vars.$main-color;
+}
+.italic {
+  font-weight: 400;
+  font-style: italic;
+}
+.subtitle {
+  font-size: 18px;
+  line-height: 150%;
+  max-width: 464px;
+  margin: auto;
+  margin-top: 15px;
+  text-align: center;
+  font-weight: 400;
+  color: vars.$grey2;
+}
