@@ -1,0 +1,62 @@
+@use "../../styles/variables.scss" as vars;
+.wrapper {
+  max-width: 472px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+
+  &__info {
+    padding: 28px 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    &-title {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 150%;
+      text-transform: uppercase;
+      text-align: center;
+      color: vars.$grey2;
+      margin-top: 8px;
+    }
+
+    &-time {
+      display: flex;
+      align-items: center;
+      text-transform: uppercase;
+      color: vars.$grey2;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 150%;
+      margin-top: 10px;
+      gap: 6px;
+    }
+
+    &-description {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 150%;
+      text-align: center;
+      color: vars.$grey2;
+
+      margin-top: 12px;
+    }
+
+    &-share {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid vars.$main-grey;
+      border-radius: 5px;
+      width: 40px;
+      height: 40px;
+
+      position: absolute;
+      top: 28;
+      right: 18px;
+
+      cursor: pointer;
+    }
+  }
+}
