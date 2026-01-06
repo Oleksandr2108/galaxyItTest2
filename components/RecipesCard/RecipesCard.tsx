@@ -4,7 +4,7 @@ import StarRating from "../StarRating/StarRating";
 import Time from "@/assets/images/Time.svg";
 import Share from "@/assets/images/Vector.svg";
 
-import styles from "./ResipesCard.module.scss";
+import styles from "./RecipesCard.module.scss"
 
 interface RecipesCardProps {
   mainImage: string | StaticImageData;
@@ -14,7 +14,7 @@ interface RecipesCardProps {
   description: string;
 }
 
-const ResipesCard = ({
+const RecipesCard = ({
   mainImage,
   title,
   rating,
@@ -59,4 +59,4 @@ const ResipesCard = ({
   );
 };
 
-export default ResipesCard;
+export default RecipesCard;

@@ -5,7 +5,7 @@ interface StarRatingProps {
 
 const StarRating = ({ rating }: StarRatingProps) => {
   const totalStars = 5;
-  const stars = Array.from({ length: totalStars }, (_, i) => i++);
+  const stars = Array.from({ length: totalStars }, (_, i) => i + 1);
   return (
     <div className={styles.wrapper}>
       {stars.map((star, index) => {

@@ -17,7 +17,7 @@ const Title = ({
   const words = title.split(" ");
   return (
     <>
-      <h1 className={styles.title}>
+      <h1 className={`col-12 ${styles.title}`}>
         {words.map((word, index) => {
           const isHighlight = highlight.includes(index);
           const isItalic = italic.includes(index);
@@ -36,7 +36,7 @@ const Title = ({
         })}
       </h1>
 
-      <p className={styles.subtitle}>{subtitle}</p>
+      <p className={`col-12 ${styles.subtitle}`}>{subtitle}</p>
     </>
   );
 };
