@@ -1,11 +1,8 @@
 @use "../../styles/variables.scss" as vars;
 .header {
   width: 100%;
-  min-height: 260px;
-  // background-image: url("../../assets/images/HeaderBack.svg");
-  // background-repeat: no-repeat;
-  // background-position: -8px 0px;
-  // background-size: 100% auto;
+  min-height: 148px;
+
   position: relative;
   &__wave {
     position: absolute;
@@ -26,6 +23,13 @@
 
   &__logo {
     flex-shrink: 0;
+  }
+
+  &__flag {
+    position: absolute;
+    z-index: -2;
+    top: 100px;
+    left: 130px;
   }
 
   &__wrapper {

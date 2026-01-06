@@ -5,6 +5,7 @@ import Link from "next/link";
 import CustomInput from "../CustomInput/CustomInput";
 import Bascket from "@/assets/images/bascket.svg";
 import SignIcon from "@/assets/images/signIn.svg";
+import Flag from '@/assets/images/Flag.svg'
 
 const Header = () => {
   return (
@@ -60,6 +61,15 @@ const Header = () => {
                   width={93}
                   height={80}
                 />
+                <Image
+                  src={Flag}
+                  alt="logo"
+                  width={57}
+                  height={37}
+                  className={styles.header__flag}
+                />
+
+
               </div>
 
               <nav className={styles.header__navMenu}>
