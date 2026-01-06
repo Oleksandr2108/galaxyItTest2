@@ -1,30 +1,49 @@
-// import Image from "next/image"
+import Image, { StaticImageData } from "next/image";
+import StarRating from "../StarRating/StarRating";
 
-// const ResipesCard = () => {
-//   return (
-//     <div>
-//       <Image src={ } />
-//       <div>
-        
-//         {/* Stars */}
-//         <div className=""></div>
-//         {/* Title */}
-//         <span></span>
-//         {/* Time */}
-//         <div>
+import Time from '@/assets/images/Time.svg'
+import Share from "@/assets/images/Vector.svg"
 
-//         </div>
+interface RecipesCardProps {
+  mainImage: string | StaticImageData;
+  title: string;
+  rating: number;
+  time: string;
+  description: string;
+}
 
-//         {/* Description */}
-//         <p>
+const ResipesCard = ({
+  mainImage,
+  title,
+  rating,
+  time,
+  description,
+}: RecipesCardProps) => {
+  return (
+    <div>
+      <Image src={mainImage}  width={472} height={315} alt="image result"/>
+      <div>
+        {/* Stars */}
+        <StarRating rating={rating} />
+        {/* Title */}
+        <span>{title}</span>
+        {/* Time */}
+        <div> 
+          <Image src={Time} width={20} height={20}  alt="time icon"/>
+          <p>{time}</p>
+        </div>
 
-//         </p>
+        {/* Description */}
+        <p>{description}</p>
 
-//         {/* LinkIcon */}
-//         <Image src={}/>
-//       </div>
-// </div>
-//   )
-// }
+        {/* LinkIcon */}
+        <div>
 
-// export default ResipesCard
+        <Image src={Share} width={20} height={23} alt="share icon" />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default ResipesCard;

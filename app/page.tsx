@@ -1,20 +1,12 @@
 import Header from "@/components/Header/Header";
-import StarRating from "@/components/StarRating/StarRating";
 import Title from "@/components/Title/Title";
 
-export default function Home() {
-  return (
+const Home = () => {
+  return(
     <>
-      <Header />
-      <Title
-        title="Authentic recipes"
-        highlight={[1]}
-        italic={[1]}
-        subtitle="Try one of our pearl sugar recipe at the comfort of your home.
-In the kitchen with waffle pantry."
-      />
-
-      <StarRating rating={3.5} />
+    
     </>
-  );
+  )
 }
+
+export default Home;
