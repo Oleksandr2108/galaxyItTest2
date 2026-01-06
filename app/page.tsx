@@ -1,4 +1,5 @@
 import Header from "@/components/Header/Header";
+import StarRating from "@/components/StarRating/StarRating";
 import Title from "@/components/Title/Title";
 
 export default function Home() {
@@ -12,6 +13,8 @@ export default function Home() {
         subtitle="Try one of our pearl sugar recipe at the comfort of your home.
 In the kitchen with waffle pantry."
       />
+
+      <StarRating rating={3.5} />
     </>
   );
 }
