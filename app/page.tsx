@@ -4,6 +4,7 @@ import RecipesList from "@/components/RecipesList/RecipesList";
 import Button from "@/components/Button/Button";
 import FreshRecipesList from "@/components/FreshRecipes/FreshRecipesList";
 import FreshRecipesSection from "@/components/FreshRecipesSection/FreshRecipesSection";
+import SwiperImage from "@/components/SwiperImage/SwiperImage";
 
 const Home = () => {
   return (
@@ -23,6 +24,7 @@ In the kitchen with waffle pantry."
        
       </div>
       <FreshRecipesSection />
+      <SwiperImage />
     </>
   );
 };
