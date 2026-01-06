@@ -12,6 +12,11 @@
     margin-bottom: 41px;
 
     &-recent {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 150%;
+      text-transform: uppercase;
+      color: vars.$grey2;
       padding-top: 12px;
       height: 50px;
       width: 50%;
@@ -19,6 +24,11 @@
       cursor: pointer;
     }
     &-popular {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 150%;
+      text-transform: uppercase;
+      color: vars.$grey2;
       padding-top: 12px;
       height: 50px;
       width: 50%;
@@ -26,6 +36,11 @@
       cursor: pointer;
     }
     &-recentActive {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 150%;
+      text-transform: uppercase;
+      color: vars.$grey2;
       padding-top: 12px;
       height: 50px;
       width: 50%;
@@ -34,6 +49,11 @@
       cursor: pointer;
     }
     &-popularActive {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 150%;
+      text-transform: uppercase;
+      color: vars.$grey2;
       padding-top: 12px;
       height: 50px;
       width: 50%;
