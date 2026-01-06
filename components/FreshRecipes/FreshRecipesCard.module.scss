@@ -1,0 +1,46 @@
+@use "../../styles/variables.scss" as vars;
+.wrapper {
+  max-width: 472px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+
+  &__info {
+    padding: 28px 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &-title {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 150%;
+      text-transform: uppercase;
+      color: vars.$grey2;
+    }
+    &-subtitle {
+      font-style: italic;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 150%;
+      color: vars.$grey2;
+      margin-top: 2px;
+    }
+
+    &-description {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      color: vars.$grey2;
+      margin-top: 10px;
+    }
+
+    &-link {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 150%;
+      text-transform: uppercase;
+      color: vars.$main-color;
+      margin-top: 22px;
+    }
+  }
+}
