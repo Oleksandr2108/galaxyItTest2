@@ -5,24 +5,13 @@ import Button from "@/components/Button/Button";
 import FreshRecipesList from "@/components/FreshRecipes/FreshRecipesList";
 import FreshRecipesSection from "@/components/FreshRecipesSection/FreshRecipesSection";
 import SwiperImage from "@/components/SwiperImage/SwiperImage";
+import RecipeSection from "@/components/RecipeSection/RecipeSection";
 
 const Home = () => {
   return (
     <>
       <Header />
-
-      <div className="container ">
-        <Title
-          highlight={[1]}
-          italic={[1]}
-          title="Authentic recipes"
-          subtitle="Try one of our pearl sugar recipe at the comfort of your home.
-In the kitchen with waffle pantry."
-        />
-        <RecipesList />
-
-       
-      </div>
+      <RecipeSection />
       <FreshRecipesSection />
       <SwiperImage />
     </>
